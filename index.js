@@ -28,7 +28,7 @@ app.use(cors());
 app.use("../storage", express.static("storage"));
 
 async function ipfsUpload(file) {
-  const client = create({ url: "http://44.201.19.127:5001/api/v0" });
+  const client = create({ url: "http://34.205.55.64:5001/api/v0" });
 
   const { cid } = await client.add(file);
 
